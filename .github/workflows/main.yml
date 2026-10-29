@@ -15,7 +15,7 @@ jobs:
 
       # 2. تحميل الملف المضغوط (يجب تغيير الرابط للرابط الخاص بك)
       - name: Download ZIP file
-        run: wget -O my_files.zip "https://example.com/link-to-your-file.zip"
+        run: wget -O my_files.zip "https://github.com/ahmep1642013n-del/tast-log/releases/download/26fs/daw26.zip"
 
       # 3. فك الضغط باستخدام كلمة السر من قسم الـ Secrets
       - name: Extract ZIP file
