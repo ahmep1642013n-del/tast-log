@@ -1,0 +1,93 @@
+{
+    "52bfd47093d4c0e619f9fa5cf5224730": {
+        "unique_device_id": "Google|39fa7af0-e223-47ab-8b63-d27a4ee16168",
+        "brand": "Poco",
+        "model": "M2102J20SG",
+        "gpu_renderer": "Adreno (TM) 660",
+        "system_software": "Android OS 13 / API-33",
+        "screen_width": 1080,
+        "screen_height": 2400,
+        "screen_dpi": "328",
+        "memory": 3341,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2613 | 9",
+        "client_ip": "215.105.24.111"
+    },
+    "9714de921a521c1a9640a7bbbe72d790": {
+        "unique_device_id": "Google|5858064b-2194-499c-aea3-379b947f1b8c",
+        "brand": "Samsung",
+        "model": "SM-G998B",
+        "gpu_renderer": "Adreno (TM) 660",
+        "system_software": "Android OS 12 / API-31",
+        "screen_width": 1440,
+        "screen_height": 2400,
+        "screen_dpi": "391",
+        "memory": 3072,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 3163 | 6",
+        "client_ip": "154.75.237.78"
+    },
+    "025e3511f01b8bafc3b7baa78a085174": {
+        "unique_device_id": "Google|97a503d8-828d-4d1a-b3b1-1c3e806c5bc1",
+        "brand": "Xiaomi",
+        "model": "2201122G",
+        "gpu_renderer": "Adreno (TM) 730",
+        "system_software": "Android OS 13 / API-33",
+        "screen_width": 720,
+        "screen_height": 1600,
+        "screen_dpi": "379",
+        "memory": 4084,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2342 | 12",
+        "client_ip": "179.240.42.249"
+    },
+    "bad9a2414b00443f804b898de653eda0": {
+        "unique_device_id": "Google|cabb37ec-f391-4a3d-9314-64e58c4091a1",
+        "brand": "Xiaomi",
+        "model": "2201122G",
+        "gpu_renderer": "Adreno (TM) 730",
+        "system_software": "Android OS 13 / API-33",
+        "screen_width": 1080,
+        "screen_height": 3200,
+        "screen_dpi": "373",
+        "memory": 4206,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2858 | 10",
+        "client_ip": "201.186.125.215"
+    },
+    "0169ed167b46cd28a19874478caea414": {
+        "unique_device_id": "Google|d9017592-ce21-4bc4-a0c0-66031eb76695",
+        "brand": "OPPO",
+        "model": "CPH2611",
+        "gpu_renderer": "Adreno (TM) 720",
+        "system_software": "Android OS 14 / API-34",
+        "screen_width": 1280,
+        "screen_height": 2400,
+        "screen_dpi": "313",
+        "memory": 3079,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2830 | 10",
+        "client_ip": "112.221.16.250"
+    },
+    "3a9875d8b5af5b0baf26a709cbb72719": {
+        "unique_device_id": "Google|4f2cb7ff-cfce-400d-b635-7bc8854b7435",
+        "brand": "Xiaomi",
+        "model": "2201122G",
+        "gpu_renderer": "Adreno (TM) 730",
+        "system_software": "Android OS 13 / API-33",
+        "screen_width": 720,
+        "screen_height": 2400,
+        "screen_dpi": "312",
+        "memory": 5824,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2838 | 10",
+        "client_ip": "132.139.174.98"
+    },
+    "44380638dd50164d4c5d6b12abca6b71": {
+        "unique_device_id": "Google|846e2346-8061-47ff-bb1f-70f26914d735",
+        "brand": "Vivo",
+        "model": "V2203",
+        "gpu_renderer": "Mali-G710",
+        "system_software": "Android OS 12 / API-31",
+        "screen_width": 1440,
+        "screen_height": 1600,
+        "screen_dpi": "335",
+        "memory": 4456,
+        "processor_details": "ARM64 FP ASIMD AES VMH | 2567 | 6",
+        "client_ip": "154.111.81.166"
+    }
+}

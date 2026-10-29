@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+accounts.json
+token_cache.json
+devices.json
+1 OLD failed/
