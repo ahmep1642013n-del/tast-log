@@ -1,34 +1,32 @@
 name: Download, Extract, and Run Python Script
 
-# متى يتم تشغيل هذا الملف؟ (هنا اخترنا التشغيل اليدوي)
 on: 
   workflow_dispatch: 
 
 jobs:
   run-script:
-    runs-on: ubuntu-latest # بيئة التشغيل (لينكس)
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. تثبيت أداة فك الضغط (لضمان وجودها)
-      - name: Install unzip
-        run: sudo apt-get install unzip -y
+      # 1. (تعديل) تثبيت أداة 7zip بدلاً من unzip
+      - name: Install 7zip
+        run: sudo apt-get install p7zip-full -y
 
-      # 2. تحميل الملف المضغوط (يجب تغيير الرابط للرابط الخاص بك)
+      # 2. تحميل الملف المضغوط (ضع الرابط الخاص بك الذي ظهر في الصورة)
       - name: Download ZIP file
         run: wget -O my_files.zip "https://github.com/ahmep1642013n-del/tast-log/releases/download/26fs/daw26.zip"
 
-      # 3. فك الضغط باستخدام كلمة السر من قسم الـ Secrets
+      # 3. (تعديل) فك الضغط باستخدام 7zip
       - name: Extract ZIP file
         env:
-          # استدعاء كلمة السر من GitHub Secrets
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }} 
-        run: unzip -P "$ZIP_PASSWORD" my_files.zip
+        run: 7z x -p"$ZIP_PASSWORD" my_files.zip -y
 
       # 4. إعداد بيئة بايثون
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10' # يمكنك تغيير إصدار بايثون حسب احتياجك
+          python-version: '3.10'
 
       # 5. تحميل وتثبيت المكتبات من requirements.txt
       - name: Install dependencies
