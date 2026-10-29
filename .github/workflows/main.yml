@@ -1,0 +1,41 @@
+name: Download, Extract, and Run Python Script
+
+# متى يتم تشغيل هذا الملف؟ (هنا اخترنا التشغيل اليدوي)
+on: 
+  workflow_dispatch: 
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest # بيئة التشغيل (لينكس)
+
+    steps:
+      # 1. تثبيت أداة فك الضغط (لضمان وجودها)
+      - name: Install unzip
+        run: sudo apt-get install unzip -y
+
+      # 2. تحميل الملف المضغوط (يجب تغيير الرابط للرابط الخاص بك)
+      - name: Download ZIP file
+        run: wget -O my_files.zip "https://example.com/link-to-your-file.zip"
+
+      # 3. فك الضغط باستخدام كلمة السر من قسم الـ Secrets
+      - name: Extract ZIP file
+        env:
+          # استدعاء كلمة السر من GitHub Secrets
+          ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }} 
+        run: unzip -P "$ZIP_PASSWORD" my_files.zip
+
+      # 4. إعداد بيئة بايثون
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # يمكنك تغيير إصدار بايثون حسب احتياجك
+
+      # 5. تحميل وتثبيت المكتبات من requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 6. تشغيل السكريبت الرئيسي
+      - name: Run main.py
+        run: python main.py
